@@ -1,39 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Palette+Mosaic&family=Rock+3D&display=swap');
 
-body{
+body {
     /*background-image: linear-gradient(-225deg, #FF057C 0%, #8D0B93 50%, #321575 100%);*/
     /*background-image: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);*/
-    
-    background-color: black;
-    
+
+    background-color: rgb(0, 0, 0);
+
     background-attachment: fixed;
     color: rgb(255, 255, 255);
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.mensagem {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.261);
+}
+
 
 
 /*fazer um efeito de maquina de escrever no titulo*/
-.titulo{
+.titulo {
     display: block;
     text-align: center;
     /*color: rgb(149, 0, 207);*/
     font-size: 50px;
     font-weight: bolder;
-    animation: flicker 1.5s infinite alternate;  
-    
+    animation: flicker 1.5s infinite alternate;
+
 }
-.titulo2{
+
+.titulo2 {
     display: block;
     text-align: center;
     color: rgb(149, 0, 207);
-    
+
     font-size: 50px;
     font-weight: bolder;
 }
 
-.container1{
+.container1 {
     border-width: 1px;
     border-style: solid;
     border-color: rgb(149, 0, 207);
@@ -41,14 +50,14 @@ body{
 
 }
 
-.container2{
+.container2 {
     border-width: 1px;
     border-style: solid;
     border-color: rgb(149, 0, 207);
-    border-radius: 30px; 
+    border-radius: 30px;
 }
 
-.container3{
+.container3 {
     font-weight: normal;
     border-width: 1px;
     border-style: solid;
@@ -57,18 +66,20 @@ body{
 
 }
 
-p{
+p {
     text-align: center;
     font-size: 30px;
     padding: 3px;
     margin: 3px;
-    
+
 }
 
 
 
 
-table, th, td{
+table,
+th,
+td {
     background-attachment: fixed;
     border: 3px solid rgb(149, 0, 207);
     border-collapse: collapse;
@@ -78,26 +89,28 @@ table, th, td{
 }
 
 
-th, td {
+th,
+td {
     padding: 5px 10px;
 }
 
-th{
+th {
     font-weight: bolder;
     color: greenyellow;
 }
 
-td{
+td {
     font-weight: normal;
 }
 
 
-.container-tabela{
-    width: 20%; 
+.container-tabela {
+    width: 20%;
     margin: auto;
 }
 
-.titulo, .titulo2 {
+.titulo,
+.titulo2 {
     color: #fff;
     text-shadow:
         0 0 7px #fff,
@@ -108,88 +121,186 @@ td{
         0 0 92px rgb(149, 0, 207),
         0 0 102px rgb(149, 0, 207),
         0 0 151px rgb(149, 0, 207);
-  }
+}
 
-  @keyframes flicker {
-    
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
         text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px rgb(149, 0, 207),
-        0 0 80px rgb(149, 0, 207),
-        0 0 90px rgb(149, 0, 207),
-        0 0 100px rgb(149, 0, 207),
-        0 0 150px rgb(149, 0, 207);
-    
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px rgb(149, 0, 207),
+            0 0 80px rgb(149, 0, 207),
+            0 0 90px rgb(149, 0, 207),
+            0 0 100px rgb(149, 0, 207),
+            0 0 150px rgb(149, 0, 207);
+
     }
-    
-    20%, 24%, 55% {        
+
+    20%,
+    24%,
+    55% {
         text-shadow: none;
-     
-    }    
-  }
+
+    }
+}
 
 
-  .rodape{
-     font-size: 15px; 
-     margin-top: 3%;
-     margin-bottom: 1%;
-  }
+.rodape {
+    font-size: 30px;
+    margin-top: 3%;
+    margin-bottom: 1%;
+}
 
-  .link{
-      display: block;
-      text-align: center;
-      text-decoration: none;
-      color: rgb(235, 16, 0);
-  }
+.container-botao {
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+}
+
+.link {
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    transition: 1s background;
+}
+
+.link:hover {
+    margin-left: 40px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(255, 0, 191);
+    font-size: 25px;
+    border: red solid 1px;
+    text-align: center;
+    text-decoration: none;
+}
 
 
 
 
 
-@media screen and (max-width: 500px){
 
-    .titulo{
+
+.container-kaiten {
+
+    background-image: url("assets/wall.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 700px;
+    margin-top: 70px;
+}
+
+.titulo-kaiten {
+    text-align: center;
+    font-size: 70px;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px rgb(255, 0, 0),
+        0 0 42px rgb(255, 0, 0),
+        0 0 82px rgb(255, 0, 0),
+        0 0 92px rgb(255, 0, 0),
+        0 0 102px rgb(255, 0, 0),
+        0 0 151px rgb(255, 0, 0);
+
+
+}
+
+.metodos-ataques {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.lista-kaiten {
+    text-align: center;
+    text-decoration: underline;
+    color: red;
+    margin-bottom: 30px;
+}
+
+.container-img {
+    position: relative;
+    width: 500px;
+    /*border: solid 1px red;*/
+    margin: 0 auto;
+}
+
+img {
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 50px;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+    .titulo {
         display: block;
         text-align: center;
         color: rgb(255, 255, 255);
         font-size: 50px;
         font-weight: bolder;
-        animation: flicker 1.5s infinite alternate;  
-        
+        animation: flicker 1.5s infinite alternate;
+
     }
-    .titulo2{
+
+    .titulo2 {
         display: block;
         text-align: center;
         color: rgb(255, 255, 255);
-        
+
         font-size: 25px;
         font-weight: bolder;
     }
-    
-    .container1{
+
+    .container1 {
         width: 100%;
         margin: auto;
         border-width: 1px;
         border-style: solid;
         border-color: rgb(149, 0, 207);
         border-radius: 30px;
-    
+
     }
-    
-    .container2{
+
+    .container2 {
         width: 100%;
         margin: auto;
         border-width: 1px;
         border-style: solid;
         border-color: rgb(149, 0, 207);
-        border-radius: 30px; 
+        border-radius: 30px;
     }
-    
-    .container3{
+
+    .container3 {
         width: 100%;
         margin: auto;
         font-weight: normal;
@@ -197,48 +308,120 @@ td{
         border-style: solid;
         border-color: rgb(149, 0, 207);
         border-radius: 30px;
-    
+
     }
-    
-    p{
+
+    p {
         text-align: center;
         font-size: 11px;
         padding: 3px;
         margin: 3px;
-        
+
     }
-    
-    
-    
-    
-    table, th, td{
+
+
+
+
+    table,
+    th,
+    td {
         background-attachment: fixed;
         border: 3px solid rgb(149, 0, 207);
         border-collapse: collapse;
         font-size: 20px;
-    
-    
+
+
     }
-    
-    
-    th, td {
+
+
+    th,
+    td {
         padding: 5px 10px;
     }
-    
-    th{
+
+    th {
         font-weight: bolder;
         color: greenyellow;
     }
-    
-    td{
+
+    td {
         font-weight: normal;
     }
-    
-    
-    .container-tabela{
-        width: 79%; 
+
+
+    .container-tabela {
+        width: 79%;
         margin: auto;
     }
+
+    .container-kaiten {
+
+        background-image: url("assets/wall.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 600px;
+        margin-top: 70px;
+    }
+
+
+    .container-img {
+        position: relative;
+        width: 500px;
+        /*border: solid 1px red;*/
+        margin: 0 auto;
+    }
+
+    img {
+        width: 250px;
+        margin-top: 30px;
+        margin-left: 50px;
+
+    }
+
+    .rodape {
+        font-size: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .lista-kaiten {
+        font-size: 20px;
+        font-family: 'Press Start 2P', cursive;
+        text-align: center;
+        text-decoration: underline;
+        color: red;
+        margin-bottom: 30px;
+    }
+
+    .container-botao {
+        position: relative;
+        margin: 0 auto;
+        width: 500px;
+    }
+
+    .link {
+        margin-left: 52px;
+        padding: 5px;
+        border-radius: 20px;
+        color: white;
+        background-color: red;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: 1s background;
+    }
+
+    .link:hover {
+        margin-left: 52px;
+        padding: 5px;
+        border-radius: 20px;
+        color: white;
+        background-color: rgb(255, 0, 191);
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+    }
+
 
 
 }
